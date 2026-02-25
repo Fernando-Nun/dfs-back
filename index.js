@@ -1,7 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const rateLimit = require('express-rate-limit');
-const pool = require('./src/db')
+const { pool } = require('./src/db')
 const { sign, authMiddleware } = require('./src/auth')
 const { router: productosRouter } = require('./src/routes/productos.routes')
 const { router: usersRouter } = require('./src/routes/users.routes') 
