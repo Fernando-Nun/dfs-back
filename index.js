@@ -12,6 +12,7 @@ const app = express()
 const allowed = [
     'http://localhost:3000',
     'http://localhost:3001',
+    'https://dfs-front-dxezvy5wj-fernando-nuns-projects.vercel.app'
 ];
 
 const limiter = rateLimit({
